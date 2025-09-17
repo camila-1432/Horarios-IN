@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bachillerato General - INFRAMEN</title>
+    <link rel="stylesheet" href="css/general.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="imagenes/logo1.png" alt="Logo INFRAMEN" class="logo-img">
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="general.html" class="active">General</a></li>
+                    <li><a href="salud.html">Salud</a></li>
+                    <li><a href="software.html">Software</a></li>
+                    <li><a href="comercio.html">Comercio</a></li>
+                    <li><a href="turismo.html">Turismo</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Bachillerato General</h2>
+                <p>Consulta los horarios por año y sección</p>
+            </div>
+        </section>
+
+        <section class="selectors">
+            <div class="container">
+                <div class="selector-group">
+                    <h3>Selecciona el año:</h3>
+                    <div class="button-group">
+                        <button class="btn-year active" data-year="primero">Primer Año</button>
+                        <button class="btn-year" data-year="segundo">Segundo Año</button>
+                    </div>
+                </div>
+
+                <div class="selector-group">
+                    <h3>Selecciona la sección:</h3>
+                    <div class="button-group secciones primero">
+                        <button class="btn-section active" data-section="1-1">Sección 1-1</button>
+                        <button class="btn-section" data-section="1-2">Sección 1-2</button>
+                        <button class="btn-section" data-section="1-3">Sección 1-3</button>
+                    </div>
+                    <div class="button-group secciones segundo" style="display: none;">
+                        <button class="btn-section" data-section="2-1">Sección 2-1</button>
+                        <button class="btn-section" data-section="2-2">Sección 2-2</button>
+                        <button class="btn-section" data-section="2-3">Sección 2-3</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="horario">
+            <div class="container">
+                <div class="horario-header">
+                    <h3>Horario <span id="titulo-seccion">Primer Año - Sección 1-1</span></h3>
+                    <p>INSTITUTO NACIONAL "GENERAL FRANCISCO MENÉNDEZ" - AÑO LECTIVO 2025</p>
+                    <p>Orientador(a):Lic. Mario Alfonso Centeno</p>
+                </div>
+                
+                <div class="tabla-horario">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Hora</th>
+                                <th>Lunes</th>
+                                <th>Martes</th>
+                                <th>Miércoles</th>
+                                <th>Jueves</th>
+                                <th>Viernes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Horario se cargará dinámicamente con JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="horario-footer">
+                    <p>LIC. MANUEL HUGO CANJURA RAMÍREZ<br>DIRECTOR</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>Teléfono: (503) 1234-5678</p>
+                <p>Email: info@inframen.edu.sv</p>
+                <p>Dirección: San Salvador, El Salvador</p>
+            </div>
+            <div class="footer-section">
+                <h4>Horarios de Atención</h4>
+                <p>Lunes a Viernes: 7:00 AM - 5:00 PM</p>
+                <p>Sábados: 8:00 AM - 12:00 PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 INFRAMEN - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="js/general.js"></script>
+</body>
+</html>

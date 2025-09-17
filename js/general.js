@@ -1,0 +1,145 @@
+// Datos de horarios (ejemplo para la sección 1-1)
+const horarios = {
+    "primero": {
+        "1-1": [
+            ["7:00 AM - 7:45 AM", "BONILLA MANCIA, IMNA DINORA LENGUA Y LITERATURA", "CORTEZ HERNÁNDEZ, HERIBERTO FINANZAS Y ECONOMÍA", "CHÁVEZ RIVERA, MARTA ALICIA INGLÉS", "BONILLA MANCIA, IMNA DINORA LENGUA Y LITERATURA", ""],
+            ["7:45 AM - 8:30 AM", "BONILLA MANCIA, IMNA DINORA LENGUA Y LITERATURA", "CORTEZ HERNÁNDEZ, HERIBERTO FINANZAS Y ECONOMÍA", "CHÁVEZ RIVERA, MARTA ALICIA INGLÉS", "BONILLA MANCIA, IMNA DINORA LENGUA Y LITERATURA", ""],
+            ["8:30 AM - 8:45 AM", "Receso", "Receso", "Receso", "Receso", "Receso"],
+            ["8:45 AM - 9:30 AM", "BONILLA MANCIA, IMNA DINORA LENGUA Y LITERATURA", "PÉREZ MARTÍNEZ, RENE ALFREDO EDUCACIÓN FÍSICA", "CAÑAS COREAS, WILFREDO BENJAMÍN CIENCIA Y TECNOLOGÍA", "CAÑAS COREAS, WILFREDO BENJAMÍN CIENCIA Y TECNOLOGÍA", ""],
+            ["9:30 AM - 10:15 AM", "", "PÉREZ MARTÍNEZ, RENE ALFREDO EDUCACIÓN FÍSICA", "CAÑAS COREAS, WILFREDO BENJAMÍN CIENCIA Y TECNOLOGÍA", "CAÑAS COREAS, WILFREDO BENJAMÍN CIENCIA Y TECNOLOGÍA", ""],
+            ["10:15 AM - 10:30 AM", "Receso", "Receso", "Receso", "Receso", "Receso"],
+            ["10:30 AM - 11:15 PM", "CHÁVEZ RIVERA, MARTA ALICIA INGLÉS", "CAÑAS COREAS, WILFREDO BENJAMÍN CIENCIA Y TECNOLOGÍA", "", "CORTEZ HERNÁNDEZ, HERIBERTO FINANZAS Y ECONOMÍA", ""],
+            ["11:15 PM - 12:00 PM", "CHÁVEZ RIVERA, MARTA ALICIA INGLÉS", "CAÑAS COREAS, WILFREDO BENJAMÍN CIENCIA Y TECNOLOGÍA", "", "CORTEZ HERNÁNDEZ, HERIBERTO FINANZAS Y ECONOMÍA", ""],
+            ["12:00 PM - 1:00 PM",  "Receso", "Receso", "Receso", "Receso", "Receso"],
+            ["1:00 PM - 1:45 PM", "", "CENTENO PORTILLO, MARIO ALFONSO PRECÁLCULO", "CENTENO PORTILLO, MARIO ALFONSO PRECÁLCULO", "Matemáticas", "AYALA RIVAS, JOSÉ UVALDO CIUDADANIA Y VALORES"],
+            ["1:45 PM - 2:30 PM", "", "CENTENO PORTILLO, MARIO ALFONSO PRECÁLCULO", "CENTENO PORTILLO, MARIO ALFONSO PRECÁLCULO", "AYALA RIVAS, JOSÉ UVALDO CIUDADANIA Y VALORES", "AYALA RIVAS, JOSÉ UVALDO CIUDADANIA Y VALORES"],
+            ["2:30 PM - 2:45 PM", "Receso", "Receso", "Receso", "Receso", "Receso"],
+            ["2:45 PM - 3:30 PM", "", "", "AYALA RIVAS, JOSÉ UVALDO CIUDADANIA Y VALORES", "CENTENO PORTILLO, MARIO ALFONSO PRECÁLCULO", "MIRANDA CÓRDOVA, JOSÉ JAVIER CIENCIAS DE LA COMPUTACIÓN"],
+            ["3:30 PM - 4:15 PM", "", "", "AYALA RIVAS, JOSÉ UVALDO CIUDADANIA Y VALORES", "CENTENO PORTILLO, MARIO ALFONSO PRECÁLCULO", "MIRANDA CÓRDOVA, JOSÉ JAVIER CIENCIAS DE LA COMPUTACIÓN"],
+            ["4:15 PM - 4:30 PM", "Receso", "Receso", "Receso", "Receso", "Receso"],
+            ["4:30 PM - 5:15 PM", "", "MIRANDA CÓRDOVA, JOSÉ JAVIER CIENCIAS DE LA COMPUTACIÓN", "", "", "GÓMEZ SERRANO, TELMA MARITZA PROYECTO DE VIDA Y CARRERA"],
+            ["4:30 PM - 5:15 PM", "", "MIRANDA CÓRDOVA, JOSÉ JAVIER CIENCIAS DE LA COMPUTACIÓN", "", "", "GÓMEZ SERRANO, TELMA MARITZA PROYECTO DE VIDA Y CARRERA"],
+        ],
+        "1-2": [
+            ["7:00 AM - 7:45 AM", "ZELAYA PÉREZ, ALISSON BERENICE MATEMÁTICA", "GUZMAN  DE NAVIDAD, FANNY PATRICIA IDIOMA EXTRANJERO", "MÉNDEZ TEJADA, ANA CECILIA LENGUAJE Y LITERATURA", "BONILLA MANCIA, IMNA DINORA LENGUA Y LITERATURA", "RIVERA ROMERO, SANDRA MARLENE CIENCIAS NATURALES"],
+            ["7:45 AM - 8:30 AM", "ZELAYA PÉREZ, ALISSON BERENICE MATEMÁTICA", "GUZMAN  DE NAVIDAD, FANNY PATRICIA IDIOMA EXTRANJERO", "MÉNDEZ TEJADA, ANA CECILIA LENGUAJE Y LITERATURA", "BONILLA MANCIA, IMNA DINORA LENGUA Y LITERATURA", "RIVERA ROMERO, SANDRA MARLENE CIENCIAS NATURALES"],
+            ["8:30 AM - 8:45 AM", "Receso", "Receso", "Receso", "Receso", "Receso"],
+            ["8:45 AM - 9:30 AM", "RIVERA ROMERO, SANDRA MARLENE CIENCIAS NATURALES", "GUZMAN  DE NAVIDAD, FANNY PATRICIA IDIOMA EXTRANJERO", "MÉNDEZ TEJADA, ANA CECILIA LENGUAJE Y LITERATURA", "ZELAYA PÉREZ, ALISSON BERENICE MATEMÁTICA", "ZELAYA PÉREZ, ALISSON BERENICE MATEMÁTICA"],
+            ["9:30 AM - 10:15 AM", "RIVERA ROMERO, SANDRA MARLENE CIENCIAS NATURALES", "ANAYA RIVERA, ROXANA MARGARITA ESTUDIOS SOCIALES Y CÍVICA", "LEÓN SILVA, YOLANDA ESTEFANIA FRANCÉS", "ZELAYA PÉREZ, ALISSON BERENICE MATEMÁTICA", "ZELAYA PÉREZ, ALISSON BERENICE MATEMÁTICA"],
+            ["10:15 AM - 10:30 AM", "Receso", "Receso", "Receso", "Receso", "Receso"],
+            ["10:30 AM - 11:15 PM", "", "ANAYA RIVERA, ROXANA MARGARITA ESTUDIOS SOCIALES Y CÍVICA", "LEÓN SILVA, YOLANDA ESTEFANIA FRANCÉS", "RIVERA ROMERO, SANDRA MARLENE CIENCIAS NATURALES", "MÉNDEZ TEJADA, ANA CECILIA LENGUAJE Y LITERATURA"],
+            ["11:15 PM - 12:00 PM", "", "ANAYA RIVERA, ROXANA MARGARITA ESTUDIOS SOCIALES Y CÍVICA", "LEÓN SILVA, YOLANDA ESTEFANIA FRANCÉS", "RIVERA ROMERO, SANDRA MARLENE CIENCIAS NATURALES", "MÉNDEZ TEJADA, ANA CECILIA LENGUAJE Y LITERATURA"],
+            ["12:00 PM - 1:00 PM",  "Receso", "Receso", "Receso", "Receso", "Receso"],
+            ["1:00 PM - 1:45 PM", "RIVAS MENDOZA, JOSÉ SAÚL CHL (BARTENDER)", "SARAVIA  DE YUDICE, EVELYN YANETH SEMINARIOS", "GÓMEZ SERRANO, TELMA MARITZA ORIENTACIÓN PARA LA VIDA", "ALVARADO DE MIRANDA, DENISSE ZORAIDA INFORMÁTICA", "SANTANA  LÓPEZ, ANA SELMA GEORGINA CHL (PANADERÍA Y PASTELERÍA)"],
+            ["1:45 PM - 2:30 PM", "RIVAS MENDOZA, JOSÉ SAÚL CHL (BARTENDER)", "SARAVIA  DE YUDICE, EVELYN YANETH SEMINARIOS", "GÓMEZ SERRANO, TELMA MARITZA ORIENTACIÓN PARA LA VIDA", "ALVARADO DE MIRANDA, DENISSE ZORAIDA INFORMÁTICA", "SANTANA  LÓPEZ, ANA SELMA GEORGINA CHL (PANADERÍA Y PASTELERÍA)"],
+            ["2:30 PM - 2:45 PM", "Receso", "Receso", "Receso", "Receso", "Receso"],
+            ["2:45 PM - 3:30 PM", "ESPINOZA RAMOS, RICARDO ADOLFO EDUCACIÓN FÍSICA", "SARAVIA  DE YUDICE, EVELYN YANETH SEMINARIOS", "GÓMEZ SERRANO, TELMA MARITZA ORIENTACIÓN PARA LA VIDA", "ALVARADO DE MIRANDA, DENISSE ZORAIDA INFORMÁTICA", "SANTANA  LÓPEZ, ANA SELMA GEORGINA CHL (PANADERÍA Y PASTELERÍA)"],
+            ["3:30 PM - 4:15 PM", "ESPINOZA RAMOS, RICARDO ADOLFO EDUCACIÓN FÍSICA", "", "", "", "SANTANA  LÓPEZ, ANA SELMA GEORGINA CHL (PANADERÍA Y PASTELERÍA)"],
+            ["4:15 PM - 4:30 PM", "Receso", "Receso", "Receso", "Receso", "Receso"],
+            ["4:30 PM - 5:15 PM", "", "", "", "", ""],
+            ["4:30 PM - 5:15 PM", "", "", "", "", ""],
+        ],
+        "1-3": []
+    },
+    "segundo": {
+        "2-1": [],
+        "2-2": [],
+        "2-3": []
+    }
+};
+
+// Variables globales
+let añoActual = "primero";
+let seccionActual = "1-1";
+
+// Cargar horario al iniciar la página
+document.addEventListener('DOMContentLoaded', function() {
+    cargarHorario(añoActual, seccionActual);
+    configurarBotones();
+});
+
+// Configurar event listeners para los botones
+function configurarBotones() {
+    // Botones de año
+    const botonesAño = document.querySelectorAll('.btn-year');
+    botonesAño.forEach(boton => {
+        boton.addEventListener('click', function() {
+            botonesAño.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            
+            añoActual = this.getAttribute('data-year');
+            
+            // Mostrar secciones correspondientes al año (CORREGIDO)
+            document.querySelectorAll('.secciones').forEach(seccion => {
+                seccion.style.display = 'none';
+            });
+            document.querySelector(`.secciones.${añoActual}`).style.display = 'flex';
+            
+            // Reiniciar sección actual y actualizar horario
+            const primeraSeccion = document.querySelector(`.secciones.${añoActual} .btn-section`).getAttribute('data-section');
+            seccionActual = primeraSeccion;
+            
+            // Actualizar botones de sección (CORREGIDO)
+            document.querySelectorAll('.btn-section').forEach(boton => {
+                boton.classList.remove('active');
+            });
+            document.querySelector(`.btn-section[data-section="${primeraSeccion}"]`).classList.add('active');
+            
+            // Cargar horario
+            cargarHorario(añoActual, seccionActual);
+            actualizarTitulo();
+        });
+    });
+    
+    // Botones de sección
+    const botonesSeccion = document.querySelectorAll('.btn-section');
+    botonesSeccion.forEach(boton => {
+        boton.addEventListener('click', function() {
+            botonesSeccion.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            
+            seccionActual = this.getAttribute('data-section');
+            cargarHorario(añoActual, seccionActual);
+            actualizarTitulo();
+        });
+    });
+}
+
+// Cargar horario en la tabla
+function cargarHorario(año, seccion) {
+    const tbody = document.querySelector('.tabla-horario tbody');
+    tbody.innerHTML = '';
+    
+    const horarioSeccion = horarios[año][seccion];
+    
+    if (horarioSeccion && horarioSeccion.length > 0) {
+        horarioSeccion.forEach(fila => {
+            const tr = document.createElement('tr');
+            
+            fila.forEach((celda, index) => {
+                const td = document.createElement('td');
+                td.textContent = celda;
+                tr.appendChild(td);
+            });
+            
+            tbody.appendChild(tr);
+        });
+    } else {
+        // Mensaje si no hay horario disponible
+        const tr = document.createElement('tr');
+        const td = document.createElement('td');
+        td.colSpan = 6;
+        td.textContent = 'Horario no disponible para esta sección';
+        td.style.textAlign = 'center';
+        td.style.padding = '20px';
+        tr.appendChild(td);
+        tbody.appendChild(tr);
+    }
+}
+
+// Actualizar título del horario
+function actualizarTitulo() {
+    const titulo = document.getElementById('titulo-seccion');
+    const añoTexto = añoActual === 'primero' ? 'Primer Año' : 'Segundo Año';
+    titulo.textContent = `${añoTexto} - Sección ${seccionActual}`;
+}
