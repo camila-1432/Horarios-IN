@@ -101,7 +101,7 @@ header {
 
 /* Hero Section */
 .hero {
-    background:  url('../imagenes/png.png');
+    background:  url('../imagenes1/png.png');
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -289,4 +289,5 @@ footer {
         align-items: center;
         text-align: center;
     }
+
 }
