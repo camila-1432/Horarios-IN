@@ -77,7 +77,7 @@ header {
 }
 
 .hero {
-    background: url('../imagenes1/general1.jpeg') no-repeat  top center; 
+    background: url('../imagenes1/genera.jpeg') no-repeat  top center; 
     background-size: cover; 
     padding: 0; 
     min-height: 520px; 
@@ -311,4 +311,5 @@ footer {
         text-align: center;
     }
 }
+
 
